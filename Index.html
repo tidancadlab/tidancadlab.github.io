@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TIDAN CAD LAB</title>
+    <link rel="shortcut icon" type="image" href="LOGO-1.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <script src="HDD_Calculation.js"></script>
+</head>
+
+<body>
+    <div class="Myhead">
+        <header>
+            <nav class="Mynav">
+                <a href=""><img src="LOGO-1.jpg" alt="LOGO"></a>
+                <!-- <div class="nav-links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="Mechanical.html">Mechanical</a></li>
+                        <li><a href="#">Civil</a></li>
+                        <li><a href="#">Electrical</a></li>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#">Contact US</a></li>
+                    </ul>
+                </div> -->
+            </nav>
+        </header>
+    </div>
+
+    <div class="text-box">
+        <article>
+            <hh1>It's all About Engineering and Technical Calculation</hh1>
+            <p id="welcome">Hi there, We are working on some Technical calculations <br>
+                and Engineering to provide you an easy way with our first website<br>
+                related to Oil and Gas Pipeline Projects, hydrocarbons Plants, refineries and building constructions,
+                <br>We continuously working harder to provide engineering calculations to you so that your work can be
+                easier.
+            </p>
+        </article>
+    </div>
+    <!-- <div class="container">
+        <form>
+            <h1>Please Enter the DATA for HDD Profile Header</h1>
+            <div class="LODP">
+                <label for="lodp">Please Enter the Name of Client</label>
+                <input type="text" id="clientName" class="Client" placeholder="Please Enter the Name of Client" required>
+            </div>
+            <input type="text" id="pmc" class="PMC" placeholder="Please Enter the Name of PMC">
+            <input type="text" id="contractorName" class="contractor" placeholder="Please Enter the Name of Contractor">
+            <input type="text" id="HDD_Detail" class="hdddetails"
+                placeholder="Please Enter the Details of HDD/Location with CH Number">
+            <input type="text" id="projectName" class="project" placeholder="Please Enter the Name of Project">
+        </form>
+    </div> -->
+    <div class="container" id="inp">
+        <form>
+            <h1>Please Enter the Details of HDD Site and Section</h1>
+            <div class="CName">
+                <label for="Client" class="text">Client Name</label>
+                <input type="text" id="clientName" class="Client" placeholder="M/s GAIL (India) Limited" required>
+            </div>
+            <div class="PName">
+                <label for="PMC" class="text">Third Party Inspection Agency Name</label>
+                <input type="text" id="pmc" class="PMC" placeholder="M/s VCS Quality Services Pvt. Ltd (VCS)">
+            </div>
+            <div class="ConName">
+                <label for="contractorName" class="text">Contractor Name</label>
+                <input type="text" id="contractorName" class="contractor"
+                    placeholder="M/s Tolani Project Pvt Ltd">
+            </div>
+            <div class="HDDDet">
+                <label for="HDD_Detail" class="text">HDD Location Name and Chainage Number</label>
+                <input type="text" id="HDD_Detail" class="hdddetails"
+                    placeholder="Indian Railway Track Crossing at CH 25.042 KM">
+            </div>
+            <div class="ProName">
+                <label for="project" class="text1">Project Name</label>
+                <input type="text" id="projectName" class="project" placeholder="RAIKOT-BARNALA PIPELINE PROJECT">
+            </div>
+            <div class="PipeMaterial">
+                <label for="pipeMaterial">* Pipe Material Grade</label>
+                <select name="pipeMaterial" id="PipeMat">
+                    <option value="42000">API 5L X-42"</option>
+                    <option value="52000">API 5L X-52"</option>
+                    <option value="56000">API 5L X-56"</option>
+                    <option value="60000">API 5L X-60"</option>
+                    <option value="65000">API 5L X-65"</option>
+                    <option value="70000">API 5L X-70"</option>
+                    <option value="80000">API 5L X-80"</option>
+                </select>
+            </div>
+            <div class="pipeOD">
+                <label for="pipeMaterial">* Pipe Outer Diameter in Inch</label>
+                <select name="pipeOD" id="od">
+                    <option value="0.1143">4 Inch</option>
+                    <option value="0.1683">6 Inch</option>
+                    <option value="0.2191">8 Inch</option>
+                    <option value="0.2731">10 Inch</option>
+                    <option value="0.3239">12 Inch</option>
+                    <option value="0.3556">14 Inch</option>
+                    <option value="0.4064">16 Inch</option>
+                    <option value="0.4570">18 Inch</option>
+                    <option value="0.5080">20 Inch</option>
+                </select>
+            </div>
+            <div class="pipeThic">
+                <label for="pipeThic">* Pipe Wall Thickness in MM</label>
+                <select name="pipeThick" id="pipeThick">
+                    <option value="3.76">3.760 MM</option>
+                    <option value="6.350">6.350 MM</option>
+                    <option value="7.040">7.040 MM</option>
+                    <option value="8.180">8.180 MM</option>
+                    <option value="10.310">10.310 MM</option>
+                    <option value="12.700">12.700 MM</option>
+                    <option value="15.090">15.090 MM</option>
+                    <option value="18.260">18.260 MM</option>
+                    <option value="20.620">20.620 MM</option>
+                    <option value="22.230">22.230 MM</option>
+                    <option value="23.010">23.010 MM</option>
+                </select>
+            </div>
+            <div class="rOC">
+                <label for="roC">* Radius of Curvature (Assumed) in Meter</label>
+                <input type="number" class="RoC" name="roC" id="roc" placeholder="Please Enter in Meter" required>
+            </div>
+            <div class="Sl">
+                <label for="SLeng">* Proposed Section Length in Meter</label>
+                <input type="number" name="SLeng" id="SectionLength" max="1200" placeholder="Please Enter in Meter" autocomplete="off" onkeyup="isEmpty()" required>
+            </div>
+            <div class="EA">
+                <label for="ea">* Entry Angle in Degree (8&#176 to 20&#176)</label>
+                <input type="number" name="ea" id="EntryAngle" placeholder="Please Enter in Degree" min="8" max="20" required>
+            </div>
+            <div class="ExA">
+                <label for="exA">* Exit Angle in Degree (5&#176 to 15&#176)</label>
+                <input type="number" name="exA" id="ExitAngle" placeholder="10 Deg" min="5" max="15" required>
+            </div>
+            <div class="MDP">
+                <label for="mdp">* Minimum Depth of Profile in Meter</label>
+                <input type="number" name="mdp" id="ProfileDepth" placeholder="Please Enter in Meter" max="15" min="1.5" required>
+            </div>
+            <div class="LDP">
+                <label for="ldp">* Line Design Pressure in Kg/cm.sq</sup></label>
+                <input type="number" name="ldp" id="DesignPressure" placeholder="Please Enter Line Design Pressure" required>
+            </div>
+            <div class="LODP">
+                <label for="lodp">* Length of One Drill Pipe in Meter</label>
+                <input type="number" name="lodp" id="LengthODrill" min="3" max="7" placeholder="Please Enter One Drill Pipe Length" required>
+            </div>
+            <div class="wdp">
+                <label for="Wdp">* Weight of Drill Pipe in Kg / Meter</label>
+                <input type="number" name="Wdp" id="WeightDrill" placeholder="Please Enter Weight of one Meter Drill Pipe" required>
+            </div>
+            <div class="wdr">
+                <label for="Wdr">* Reamer Weight (Max Considered)</label>
+                <input type="number" name="Wdr" id="WeightReamer" placeholder="Please Enter Weight of Reamer" required>
+            </div>
+            <button name="btn" onclick="myFunction()" id="cal" ><a href="#result" class="btn">-- Calculate--</a></button>
+        </form>
+
+    </div>
+    <div class="container" id="result">
+        <form class="result">
+            <h1>Result of HDD Load Calculation</h1>
+            <div class="CHead">
+                <h2>Client:&nbsp<span class="head" id="client">Not Available</span></h2>
+                <h2>PMC:&nbsp<span class="head" id="PMC">Not Available</span></h2>
+                <h2>Contractor:&nbsp<span class="head" id="Contractor">Not Available</span></h2>
+                <h2>Project:&nbsp<span class="head" id="project">Not Available</span></h2>
+                <h2>HDD Location:&nbsp<span class="head" id="HDD_Details">Not Available</span></h2>
+            </div>
+            <div class="table1">
+                <table class="mainDATA">
+                    <thead>
+                        <tr>
+                            <th>Item Description</th>
+                            <th>Symbol</th>
+                            <th>Formula</th>
+                            <th>value</th>
+                            <th>Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody">
+                        <tr>
+                            <td>Pipe Material </td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td style="text-align: end;">API 5L X-<span id="pmt"></span></td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Outside Diameter</td>
+                            <td>Do</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Do"></span></td>
+                            <td>Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Inside Diameter</td>
+                            <td>Di</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Di"></span></td>
+                            <td>Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Wall Thickness</td>
+                            <td>T</td>
+                            <td> </td>
+                            <td style="text-align: end;"><span class="T"></span></td>
+                            <td>mm</td>
+                        </tr>
+                        <tr>
+                            <td>Specified Minimum Yield Strength</td>
+                            <td>SMYS</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="smys"></span></td>
+                            <td>psi</td>
+                        </tr>
+                        <tr>
+                            <td>Weight of pipe in Air</td>
+                            <td>Wt</td>
+                            <td>π/4 X (Do²-Di²) X density of steel</td>
+                            <td style="text-align: end;"><span class="Wt"></span></td>
+                            <td>Kg/m</td>
+                        </tr>
+                        <tr>
+                            <td>Modulus of Elasticity for steel</td>
+                            <td>E</td>
+                            <td> </td>
+                            <td style="text-align: end;"><span class="E"></span></td>
+                            <td>N / m2</td>
+                        </tr>
+                        <tr>
+                            <td>Radius of Curvature (Assumed)</td>
+                            <td>R</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="R"></span></td>
+                            <td>Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Co-efficient of Drag</td>
+                            <td>d</td>
+                            <td>-</td>
+                            <td class="d"  style="text-align: end;"></td>
+                            <td>N/m2</td>
+                        </tr>
+                        <tr>
+                            <td>Mud Density</td>
+                            <td>dm</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="dm"></span></td>
+                            <td>Kg / m3</td>
+                        </tr>
+                        <tr>
+                            <td>Water Density</td>
+                            <td>dw</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span id="dw1"></span></td>
+                            <td>Kg / m3</td>
+                        </tr>
+                        <tr>
+                            <td>Density of steel</td>
+                            <td>ds</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span id="ds"></span></td>
+                            <td>Kg / m3</td>
+                        </tr>
+                        <tr>
+                            <td>Proposed Section Length</td>
+                            <td>L</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="L"></span></td>
+                            <td>Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Entry Angle</td>
+                            <td>Q1</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Q1"></span></td>
+                            <td>Deg</td>
+                        </tr>
+                        <tr>
+                            <td>Exit Angle</td>
+                            <td>Q2</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Q2"></span></td>
+                            <td>Deg</td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Depth of Profile</td>
+                            <td>D</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="D"></span></td>
+                            <td>Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Line Design Pressure</td>
+                            <td>p</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span id="p"></span></td>
+                            <td>Kg / M2</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-hydrotest Pressure (1.5 Times of Design Pressure)</td>
+                            <td>Pre-test</td>
+                            <td>Design pressure X 1.5</td>
+                            <td style="text-align: end;"><span id="pre_test"></span></td>
+                            <td>Kg / M2</td>
+                        </tr>
+                        <tr>
+                            <td>Post-hydrotest Pressure (1.5 Times of Design Pressure)</td>
+                            <td>Post-test</td>
+                            <td>Design pressure X 1.5</td>
+                            <td style="text-align: end;"><span class="post_test"></span></td>
+                            <td>Kg / M2</td>
+                        </tr>
+                        <tr>
+                            <td>Length of One HDD Machine Drill Pipe</td>
+                            <td>Ld</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Ld"></span></td>
+                            <td>Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Weight of HDD Machine Drill Pipe</td>
+                            <td>Wd</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Wd"></span></td>
+                            <td>Kg / Meter</td>
+                        </tr>
+                        <tr>
+                            <td>Total weight of used HDD Machine Drill Pipe</td>
+                            <td>tWd</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="tWd"></span></td>
+                            <td>Kg</td>
+                        </tr>
+                        <tr>
+                            <td>Co-efficient of Friction in Down hole (μ)</td>
+                            <td>f</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="f"></span></td>
+                            <td>No Unit</td>
+                        </tr>
+                        <tr>
+                            <td>Static friction Co-efficient on Roller (μ)</td>
+                            <td>s</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span id="s"></span></td>
+                            <td>No Unit</td>
+                        </tr>
+                        <tr>
+                            <td>Reamer Weight (Maximum Considered)</td>
+                            <td>Rw</td>
+                            <td>-</td>
+                            <td style="text-align: end;"><span class="Rw"></span></td>
+                            <td>Kg</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="L4">1.0 Cross Section Area of Pipe (As in Meter <sup>2</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp (CSa) = Π/4 (Do²-Di²)</h3>
+            <h3> &nbsp &nbsp &nbsp (CSa) = <span name="PI">Π</span>/4 (<span class="Do">Do</span><sup> 2</sup>-<span
+                    class="Di">Di</span><sup> 2</sup>) = <span class="CSa">CSa</span> Meter<sup>&nbsp2</sup></h3>
+            <h2>2.0 MOMENT OF INERTIA (I in Meter<sup>&nbsp4</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp Moment of Inertia (I) = Π/4 (Do<sup>4</sup>-Di<sup>4</sup>)</h3>
+            <h3> &nbsp &nbsp &nbsp I = <span name="PI">Π</span>/64 (<span class="Do">Do</span><sup>4</sup>-<span
+                    class="Di">Di</span><sup>4</sup>) = <span class="I">I</span> Meter <sup>4</sup></sub></h3>
+            <h2>3.0 WEIGHT OF ONE DRILL PIPE (W IN KG)</h2>
+            <h3> &nbsp &nbsp &nbsp Weight of one Drill Pipe (W) = Ld * Wd</h3>
+            <h3> &nbsp &nbsp &nbsp W = <span class="Ld">Ld</span> * <span class="Wd">Wd</span> = <span
+                    class="Wod">Wod</span> Kgs</h3>
+            <h2>4.0 LOAD CALCULATIONS</h2>
+            <h2 class="L4">4.1 Buoyancy of Steel Pipe in Down Hole (B IN KG/Meter)</h2>
+            <h3> &nbsp &nbsp &nbsp B = Π/4 * Do<sup>2</sup> * dm</h3>
+            <h3> &nbsp &nbsp &nbsp B = <span name="PI">Π</span>/4 * <span class="Do">Do</span><sup>2</sup> * <span
+                    class="dm">dm</span> = <span class="B">B</span> Kgs/Meter</h3>
+            <h2>4.2 Total Weight of Steel Pipe in Down Hole : (Wb in Kg/Meter)</h2>
+            <h3> &nbsp &nbsp &nbsp Wb = Wt - B</h3>
+            <h3> &nbsp &nbsp &nbsp Wb = <span class="Wt">Wt</span> - <span class="B">B</span> = <span
+                    class="Wb">Wb</span> Kg/Meter</h3>
+            <h2>4.3 Bending Moment :-( bm in Newton / Meter)</h2>
+            <h3> &nbsp &nbsp &nbsp bm = (E * I) / R</h3>
+            <h3> &nbsp &nbsp &nbsp bm = (<span class="E">E</span> * <span class="I">I</span>) / <span class="R">R</span>
+                = <span class="bm">bm</span> Newton</h3>
+            <h2>4.4 Force due to Buoyancy:- (F1 in Newton)</h2>
+            <h3> &nbsp &nbsp &nbsp F1 = (f) * (-Wb) * (L) * 9.806</h3>
+            <h3> &nbsp &nbsp &nbsp F1 = <span class="f">(f)</span> * <span class="Wb">(-Wb)</span> * <span
+                    class="L">(L)</span> * 9.806 = <span class="F1">F1</span> Newton</h3>
+            <h2>4.5 Force due to Curvature:- (F2 in Newton)</h2>
+            <h3> &nbsp &nbsp &nbsp F2 = (4 * f * bm) / (∏ / 360 (Q entry * R + Q Exit * R))</h3>
+            <h3> &nbsp &nbsp &nbsp F2 = (4 * <span class="f">f</span> * <span class="bm">bm</span>) / (<span
+                    name="PI">Π</span> / 360 * ((<span class="Q1">Q1</span> * <span class="R">R</span>) + (<span
+                    class="Q2">Q2</span> * <span class="R">R</span>)) = <span class="F2">F2</span> Newton</h3>
+            <h2>4.6 Force due to Cohesion:- (F3 in Newton)</h2>
+            <h3> &nbsp &nbsp &nbsp F3 = d * Π * Do * L </h3>
+            <h3> &nbsp &nbsp &nbsp F3 = <span class="d">d</span> * <span name="PI">Π</span> * <span class="Do">Do</span>
+                * <span class="L">L</span> = <span class="F3">F3</span> Newton</h3>
+            <h2>4.7 Pulling Force: (F in Newton)</h2>
+            <h3> &nbsp &nbsp &nbsp F = F1 + F2 +F3 </h3>
+            <h3> &nbsp &nbsp &nbsp F = <span class="F1">F1</span> + <span class="F2">F2</span> +<span
+                    class="F3">F3</span> = <span class="F">F</span> Newton</h3>
+            <h2 class="L2">4.8 Total Pulling Load: (in Kg)</h2>
+            <h3> &nbsp &nbsp &nbsp tpl = 1.5 * (F + tWd + Rw) </h3>
+            <h3> &nbsp &nbsp &nbsp tpl = 1.5 * (<span class="F">F</span> + <span class="tWd">tWd</span> + <span
+                    class="Rw">Rw</span>) = <span class="tpl">tpl</span> Ton</h3>
+            <h2>5.0 STRESS CALCULATIONS</h2>
+            <h2 class="L4">5.1 Maximum Allowable Stress :- (in N/M<sup> 2</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp s = 90% of SMYS </h3>
+            <h3> &nbsp &nbsp &nbsp s = 90% * <span class="smys">SMYS</span> = <span class="s">s</span> Newton /
+                Meter<sup> 2</sup></h3>
+            <h2>5.2 Bending Stress :- (in N/M<sup> 2</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp Bs = E * D / 2 * R </h3>
+            <h3> &nbsp &nbsp &nbsp Bs = <span class="E">E</span> * <span class="Do">Do</span> / 2 * <span
+                    class="R">R</span> = <span class="Bs">Bs</span> Newton / Meter<sup> 2</sup></h3>
+            <h2>5.3 Tensile Stress :- (in N/M<sup> 2</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp ts = F * CSa </h3>
+            <h3> &nbsp &nbsp &nbsp ts = <span class="F">F</span> * <span class="CSa">CSa</span> = <span
+                    class="ts">ts</span> Newton / Meter<sup> 2</sup></h3>
+            <h2>5.4 Longitudinal Stress during Installation :- (in N/M<sup> 2</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp Ls = ts + Bs </h3>
+            <h3> &nbsp &nbsp &nbsp Ls = <span class="ts">ts</span> + <span class="Bs">Bs</span> = <span
+                    class="Ls">ts</span> Newton / Meter<sup> 2</sup></h3>
+            <h3> &nbsp &nbsp &nbsp HENCE, Pulling is <span class="pulling"> SAFE OR NOT</span></h3>
+            <h2>6.0 Stress Calculations During Post Hydrotest:</h2>
+            <h2 class="L4">6.1 Hydrostatic Test Stress :- (in N/M<sup> 2</sup>)</h2>
+            <h3> &nbsp &nbsp &nbsp Bh = Post-Test * Do / 2 * T </h3>
+            <h3> &nbsp &nbsp &nbsp Bh = <span class="post_test">Post-Hydrotest</span> * <span class="Do">Do</span> / 2 *
+                <span class="T">T</span> = <span class="Bh">ts</span> Newton / Meter<sup> 2</sup>
+            </h3>
+            <h2>6.2 FOR Post Installation :-</h2>
+            <h3> &nbsp &nbsp &nbsp pi = Bs + Bh </h3>
+            <h3> &nbsp &nbsp &nbsp pi = <span class="Bs">Bs</span> + <span class="Bh">Bh</span> = <span
+                    class="pi">pi</span> Newton / Meter<sup> 2</sup></h3>
+            <h2 class="L2"> &nbsp &nbsp &nbsp HENCE PULLING IS <span class="pulling_PH"> IS SAFE OR NOT</span></h2>
+            <h2>7.0 Stress Calculations For Maximum Allowable Stress</h2>
+            <h3> &nbsp &nbsp &nbsp S = Allowable Stress for bending </h3>
+            <h3> &nbsp &nbsp &nbsp S = s - pi </h3>
+            <h3> &nbsp &nbsp &nbsp S = <span class="s">s</span> - <span class="pi">pi</span> = <span class="S">pi</span>
+                Newton / Meter<sup> 2</sup></h3>
+            <h2>8.0 Minimum Allowable Radius of Curvature :- (in Meter)</h2>
+            <h3> &nbsp &nbsp &nbsp r = (E * Do) / 2 * S </h3>
+            <h3> &nbsp &nbsp &nbsp r = (<span class="E">E</span> * <span class="Do">Do</span>) / 2 * <span
+                    class="S">S</span> = <span class="r">r</span> Meter</h3>
+            <h2 class="L2"> &nbsp &nbsp &nbsp HENCE, The calculated radius is <span class="CR"> Less or Greater</span> than the
+                proposed radius of curvature.</h2>
+                
+                <button class="print" onclick="window.print();"><a class="prn" href="#">Print</a></button>    
+            <br>
+        </form>
+    </div>
+    </section>
+    <div class="bootom">
+        <footer class="footer">
+            <div class="myf">
+                <p class="au">Author: Praveen Kumar</p>
+                <p class="mail"><a class="mailid" href="mailto:tidancadlab@gmail.com">tidancadlab@gmail.com</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
