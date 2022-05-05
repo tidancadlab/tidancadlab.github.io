@@ -137,7 +137,7 @@ function myFunction(){
         //4.4	Force due to Buoyancy:- (F1 in N)	
 	    //F1 =	   F x N
 	    //=	  f (Weight of Steel pipe in down hole x Proposed Length ) x N
-        var F1 = f * -Wb * L * 9.806 ;
+        var F1 = f * Wb * L * 9.806 ;
         document.getElementsByClassName("F1")[0].innerHTML=F1;
         document.getElementsByClassName("F1")[1].innerHTML=F1;
 
