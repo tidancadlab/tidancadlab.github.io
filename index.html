@@ -14,6 +14,14 @@
         rel="stylesheet">
     <script src="HDD_Calculation.js"></script>
     <script src="result.js"></script>
+    <script>
+        var form = document.getElementById("form");
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+            var ROC = getElementById("roc").value;
+            var sectionLength = document.getElementById("SectionLength").value;
+        })
+    </script>
 
 </head>
 <body>
@@ -64,9 +72,8 @@
             </form>
         </div>
         <div class="container" id="inp">
-            <form>
+            <form id="form">
                 <h1>Please Enter the Details of HDD Site and Section</h1>
-
                 <div class="PipeMaterial">
                     <label for="pipeMaterial">* Pipe Material Grade</label>
                     <select name="pipeMaterial" id="PipeMat">
@@ -145,10 +152,12 @@
                     <label for="Wdr">* Reamer Weight (Max Considered)</label>
                     <input type="number" name="Wdr" id="WeightReamer"  required>
                 </div>
-                <button name="btn" type="submit" onclick="myFunction()" id="cal"><a href="#"
-                        class="btn">Calculate</a></button>
+                <button name="btn" type="submit" value="Register" onclick="myFunction()" id="cal">
+                    <p class="btn">calculate</p>
+                </button>
             </form>
         </div>
+        
         <div class="container" id="result">
             <form class="result">
                 <h1>Result of HDD Load Calculation</h1>

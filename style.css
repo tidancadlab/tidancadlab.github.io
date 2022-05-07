@@ -202,12 +202,13 @@ button.print:hover{
     border: 2px solid #333;
 }
 
-button#cal .btn, .prn{
+button#cal .btn, a.prn{
     text-decoration: none;
     color: rgb(255, 254, 254);
     font-size: 20px;
-    padding: 18px 43px;
+    padding: 10px 43px;
     text-align: center;
+    margin: 0px;
     font-family: 'Comfortaa', cursive;
     flex: 1;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
@@ -216,7 +217,7 @@ button#cal .btn:hover,
 a.prn:hover{
     color: #042940;
     font-size: 24px;
-    padding: 10px 25px;
+    padding: 7px 25px;
 }
 
 .container form #calculate {
@@ -630,6 +631,7 @@ p.au{
         color: rgb(255, 254, 254);
         font-size: 19px;
         padding: 10px 38px;
+        margin: 0px;
         text-align: center;
         font-family: 'Comfortaa', cursive;
         flex: 1;
@@ -1039,12 +1041,13 @@ p.au{
         align-self: center;
     }
     
-    button#cal .btn, .prn{
+    button#cal .btn, a.prn{
         text-decoration: none;
         color: rgb(255, 254, 254);
         font-size: 14px;
         padding: 10px 38px;
         text-align: center;
+        margin: 0px;
         font-family: 'Comfortaa', cursive;
         flex: 1;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
