@@ -83,23 +83,23 @@
                 <div class="pipeOD">
                     <label for="pipeMaterial">* Pipe Outer Diameter in Inch</label>
                     <select name="pipeOD" id="od">
-                        <option value="0.1143">4 Inch</option>
-                        <option value="0.1683">6 Inch</option>
+                        <!-- <option value="0.1143">4 Inch</option>
+                        <option value="0.1683">6 Inch</option> -->
                         <option value="0.2191">8 Inch</option>
-                        <option value="0.2731">10 Inch</option>
+                        <!-- <option value="0.2731">10 Inch</option>
                         <option value="0.3239">12 Inch</option>
                         <option value="0.3556">14 Inch</option>
                         <option value="0.4064">16 Inch</option>
                         <option value="0.4570">18 Inch</option>
-                        <option value="0.5080">20 Inch</option>
+                        <option value="0.5080">20 Inch</option> -->
                     </select>
                 </div>
                 <div class="pipeThic">
                     <label for="pipeThic">* Pipe Wall Thickness in MM</label>
                     <select name="pipeThick" id="pipeThick">
-                        <option value="3.76">3.760 MM</option>
-                        <option value="6.350">6.350 MM</option>
-                        <option value="7.040">7.040 MM</option>
+                        <!-- <option value="3.76">3.760 MM</option> -->
+                        <option value="6.40">6.4 MM</option>
+                        <!-- <option value="7.040">7.040 MM</option>
                         <option value="8.180">8.180 MM</option>
                         <option value="10.310">10.310 MM</option>
                         <option value="12.700">12.700 MM</option>
@@ -107,54 +107,47 @@
                         <option value="18.260">18.260 MM</option>
                         <option value="20.620">20.620 MM</option>
                         <option value="22.230">22.230 MM</option>
-                        <option value="23.010">23.010 MM</option>
+                        <option value="23.010">23.010 MM</option> -->
                     </select>
                 </div>
                 <div class="rOC">
                     <label for="roC">* Radius of Curvature (Assumed) in Meter</label>
-                    <input type="number" class="RoC" name="roC" id="roc" placeholder="Please Enter in Meter" required>
+                    <input type="number" class="RoC" name="roC" id="roc" required>
                 </div>
                 <div class="Sl">
                     <label for="SLeng">* Proposed Section Length in Meter</label>
-                    <input type="number" name="SLeng" id="SectionLength" max="1200" placeholder="Please Enter in Meter"
-                        autocomplete="off" onkeyup="isEmpty()" required>
+                    <input type="number" name="SLeng" id="SectionLength" required>
                 </div>
                 <div class="EA">
                     <label for="ea">* Entry Angle in Degree (8&#176 to 20&#176)</label>
-                    <input type="number" name="ea" id="EntryAngle" placeholder="Please Enter in Degree" min="8" max="20"
-                        required>
+                    <input type="number" name="ea" id="EntryAngle" required>
                 </div>
                 <div class="ExA">
                     <label for="exA">* Exit Angle in Degree (5&#176 to 15&#176)</label>
-                    <input type="number" name="exA" id="ExitAngle" placeholder="10 Deg" min="5" max="15" required>
+                    <input type="number" name="exA" id="ExitAngle" required>
                 </div>
                 <div class="MDP">
                     <label for="mdp">* Minimum Depth of Profile in Meter</label>
-                    <input type="number" name="mdp" id="ProfileDepth" placeholder="Please Enter in Meter" max="15"
-                        min="1.5" required>
+                    <input type="number" name="mdp" id="ProfileDepth" required>
                 </div>
                 <div class="LDP">
                     <label for="ldp">* Line Design Pressure in Kg/cm.sq</sup></label>
-                    <input type="number" name="ldp" id="DesignPressure" placeholder="Please Enter Line Design Pressure"
-                        required>
+                    <input type="number" name="ldp" id="DesignPressure" required>
                 </div>
                 <div class="LODP">
                     <label for="lodp">* Length of One Drill Pipe in Meter</label>
-                    <input type="number" name="lodp" id="LengthODrill" min="3" max="7"
-                        placeholder="Please Enter One Drill Pipe Length" required>
+                    <input type="number" name="lodp" id="LengthODrill"  required>
                 </div>
                 <div class="wdp">
                     <label for="Wdp">* Weight of Drill Pipe in Kg / Meter</label>
-                    <input type="number" name="Wdp" id="WeightDrill"
-                        placeholder="Please Enter Weight of one Meter Drill Pipe" required>
+                    <input type="number" name="Wdp" id="WeightDrill" required>
                 </div>
                 <div class="wdr">
                     <label for="Wdr">* Reamer Weight (Max Considered)</label>
-                    <input type="number" name="Wdr" id="WeightReamer" placeholder="Please Enter Weight of Reamer"
-                        required>
+                    <input type="number" name="Wdr" id="WeightReamer"  required>
                 </div>
-                <button name="btn" type="submit" onclick="myFunction()" ondblclick="myf()" id="cal"><a href="#"
-                        class="btn">-- Calculate--</a></button>
+                <button name="btn" type="submit" onclick="myFunction()" id="cal"><a href="#"
+                        class="btn">Calculate</a></button>
             </form>
         </div>
         <div class="container" id="result">
