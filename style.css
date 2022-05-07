@@ -1052,8 +1052,8 @@ p.au{
     button#cal .btn:hover,
     a.prn:hover{
         color: #042940;
-        font-size: 24px;
-        padding: 3px 15px;
+        font-size: 20px;
+        padding: 5px 15px;
     }
     
     .container form #calculate {
