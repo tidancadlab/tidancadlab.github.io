@@ -9,9 +9,15 @@
     scroll-behavior: smooth;
 }
 body{
-    background: #042940;
-    min-height: 200vh;
+
+    background:#fbfdff;
+
 }
+.scrolling-active{
+    background-color: #042940;
+}
+
+
 div.Myhead {
     position:sticky;
     top: 0;
@@ -21,9 +27,13 @@ div.Myhead {
     z-index: 100; 
     height: auto;
 }
+header{
+    width: 980px;
+    
+}
 nav{
     position: relative;
-    width: 980px;
+    max-height: 980px;
     display: flex;
     padding: 0% 0.5%;
     justify-content: center;
@@ -32,7 +42,7 @@ nav{
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651); 
     background: linear-gradient(70deg,rgba(255, 192, 203), #03ffd5);
-    border-bottom: 4px solid rgba(241, 164, 164, 0.253);
+    backdrop-filter: blur(5px);
     
 }
 nav img{
@@ -41,67 +51,8 @@ nav img{
     padding-left: 7px;
     padding-right: 0%;
     border-radius: 20px;
-    align-items: center;
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
-    padding-right: 20px;
-}
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: rgb(49, 0, 37);
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bolder;
-    font-variant: small-caps;
-         
-}
-.nav-links ul li ::after{
-    content: '';
-    width: 0%;
-    height: 1px;
-    background:rgba(253, 0, 0, 0.836);
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li :hover::after{
-    width: 100%;
-}
-/* #background{
-    min-height: 100%;
-    width: 100%;
-    display: flex;
-    position:absolute;
-    background-position: center;
-    background-size: cover;
-    filter: blur(80px);
-} */
-/* .text-box{
-    position: absolute;
-    top: 250px;
-    left: 50%;
-    transform:translate(-50%, -50%);
-    z-index: 5;
-    width: 980px;
-    padding: 20px 0;
-    color: rgb(110, 0, 0);
-    text-align: center;
-    background: whitesmoke;
-    background-position: center;
-    background-size: cover;
-    border: 0.5px solid rgba(80, 0, 0, 0);
-    border-radius: 15px;   
-    box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.288); 
-    backdrop-filter: blur(10px);
-    
-} */
+
 
 .container form , article{
     max-width: 980px;
@@ -115,16 +66,14 @@ nav img{
     backdrop-filter: blur(10px);
     flex-wrap: wrap;
     margin-top:10px;
-    background: rgb(255, 255, 255);
-}
-
-article{
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.652);
+    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .text-box hh1{
     font-size: 25px;
-    color: rgb(148, 3, 3);
+    color: rgb(116, 0, 0);
     font-weight: bolder;
     margin-top: 2px;
     text-align: center;
@@ -137,7 +86,7 @@ article{
     font-size: 18px;
     font-weight: 400;
     font-variant:small-caps;
-    color: rgb(0, 0, 0);  
+    color: rgb(4, 12, 87);  
     font-weight: bold;    
     height: auto;
     text-align: center;
@@ -428,6 +377,11 @@ span.head{
     color: #042940;
     font-size: 16px;
 }
+div.btnprint{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
 
 .bootom{
     align-items: center;
@@ -474,3 +428,830 @@ p.au{
     border-radius: 10px 10px 0 0;
 }
 
+@media (max-width: 997px) and (min-width:500px){
+    body{
+        background: #000000;
+        width: 980px;
+        justify-content: center;
+        align-content: center;
+        padding-left: 0px;
+    }
+    
+    header{
+        max-width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.Myhead {
+        top: 0;
+        width: auto;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        z-index: 100; 
+        height: auto;
+    }
+    nav{
+        position: relative;
+        width: 800px;
+        display: flex;
+        padding: 0% 0.5%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651); 
+        background: linear-gradient(70deg,rgba(255, 192, 203), #03ffd5);
+        border-bottom: 4px solid rgba(227, 159, 159, 0.253);
+        
+    }
+    nav img{
+        width: 70px;
+        padding-top: 9px;
+        padding-left: 7px;
+        padding-right: 0%;
+        border-radius: 20px;
+    }
+   
+    .container form , article{
+        width: 800px;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 1.5px 1.5px 10px rgb(0, 0, 0);
+        flex-wrap: wrap;
+        margin-top:10px;
+        background: white;
+    }
+    
+    .text-box hh1{
+        font-size: 20px;
+        color: rgb(116, 0, 0);
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #welcome{
+        margin: 13px 0 5px;
+        font-size: 14px;
+        color: rgb(4, 12, 87);  
+        height: auto;
+        text-align: center;
+    }
+    .container, .text-box {
+        margin-top: 0.5px;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+    }
+    .text-box{
+        margin-top: 2px;
+    }
+    #inp.container{
+        margin-top: 0.5px;
+    }
+    
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #fbfdff;
+        background: #042940;
+        font-weight: 400;
+        font-size: 20px;
+        margin: 0px 0 15px;
+        width: 760px;
+        height: 40px;
+        text-align: center;
+        font-weight: bolder;
+        align-self: center;
+        border-radius: 8px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .container form input , select, button{
+        width: 380px;
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        outline: none;
+        font-size: 13px;
+        margin-bottom: 7px;
+        background: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0.5px #042940 solid;
+        border-radius: 0px 0px 8px 8px;
+        margin-right: 2px;
+        margin-left: 2px;
+        display: flex;
+    
+    }
+
+    input#projectName{
+        width: 760px;
+    }
+    input#roc, #SectionLength, #EntryAngle, #ExitAngle, #ProfileDepth, #DesignPressure, 
+    #LengthODrill, #WeightDrill, #WeightReamer{
+        width: 380px;
+        padding-right: 0px;
+    }
+    
+    
+    select{
+        width: 380px;
+        display: flex;
+        align-items: center;
+    }
+    div.PipeMaterial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    label {
+        margin: 0 2px;
+        background: #042940;
+        color: white;
+        width: 380px;
+        height: 25px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 0px 0px 0px 7px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 12px
+    }
+
+    div.in_out{
+        margin: 5px;
+    }
+    
+    label.text{
+        width: 380px;
+    }
+    label.text1{
+        width: 760px;
+    }
+    button#cal, .print {
+        background: #a55504;
+        width: 250px;
+        text-decoration: none;
+        padding: 0;
+        box-shadow: 0px 1px 2px;
+        border: none;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        margin-top: 10px;
+        height: 45px;
+    }
+
+    button#cal:hover,
+    button.print:hover{
+        background: rgb(255, 255, 255);
+        /* border: 1px solid #042940;
+        box-shadow: 0px 5px 15px #042940; */
+        border: 2px solid rgb(169, 80, 251);
+    }
+
+    button.print{
+        align-self: center;
+    }
+    
+    button#cal .btn, .prn{
+        text-decoration: none;
+        color: rgb(255, 254, 254);
+        font-size: 19px;
+        padding: 10px 38px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        flex: 1;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+    }
+    button#cal .btn:hover,
+    a.prn:hover{
+        color: #042940;
+        font-size: 24px;
+        padding: 10px 25px;
+    }
+    
+    .container form #calculate {
+        border: none;
+        background: #fff;
+        border-radius: 8px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #333;
+        width: 100px;
+        padding: 0;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        transition: 0.3s;
+    }
+    
+    #result{
+        margin-top: 0.5px;
+    }
+    
+    form.result {
+        height: auto;
+        align-content: center;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 800px;
+        min-width: 600px;
+        padding: 5px;
+    }
+    
+    .container form h4{
+        font-size: larger;
+        color: rgb(65, 0, 0);
+        font-weight: 300;
+        margin-top: 20px;
+        margin-left: 50px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    #h4{
+        font-size: larger;
+        color: rgb(65, 0, 0);
+        font-weight: 300;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    
+    form p, span{
+        font-size: larger;
+        color: rgb(65, 0, 0);
+        font-weight: 300;
+        margin-top: 2px;
+        margin-left: 50px;
+        text-align: left;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    div.table1{
+        width: auto;
+        border-collapse: collapse;
+        margin: 10px;
+        width: 700px;
+        margin-left: 10px;
+    }
+    .headerDATA{
+        width: 15px;
+    }
+    thead{
+        text-align: start;
+    }
+    tbody {
+        width: auto;
+        color: rgb(0, 0, 0);
+        column-gap: 0px;
+        border-collapse: collapse;
+        font-size: 15px;
+        }
+    th {
+        column-gap: 0;
+        column-gap: 0px;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+    td{
+        border-collapse: collapse;
+        column-gap: 0px;
+    }
+    tr{
+        width: auto;
+        column-gap: 0px;
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-family: 'Nunito Sans';
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    h2.L4{
+        margin-top: 0px;
+    }
+    
+    h3{
+        margin-left: 17px;
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        font-weight: 100;
+    }
+    
+    span{
+        margin-left: 0px;
+        color: rgb(255, 0, 0);
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+    }
+    
+    select#ClientName{
+        margin: 0;
+        padding: 0;
+    }
+    div.CHead{
+        align-self:start;
+        margin-left: 10px;
+    }
+    div.CHead h2{
+        margin: 0;
+    }
+    div.client h1{
+        margin: 0px;
+        background: none;
+        color: #042940;
+        font-size: 16px;
+        height: auto;
+        display: flex;
+        justify-content: start;
+    }
+    span.head{
+        margin: 0;
+        background: none;
+        color: #042940;
+        font-size: 16px;
+    }
+    div.btnprint{
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+    }
+    
+    .bootom{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-top: 0px;
+    }
+    .footer{
+        display: flex;
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        min-width: 780px;
+        background: #03ffd5;
+        border-radius: 6px;
+    }
+    
+        .myf{
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            font-size: 18px;
+        }
+    a.mailid{
+        text-decoration: none;
+        color: #03ffd5;
+        font-weight: 100;
+    }
+    p.mail, .au{
+        display: flex;
+        align-items: center;
+        background: #333;
+        height: 35px;
+        width: 250px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0px 0px 10px 10px;
+    }
+    p.au{
+        border: 2px solid #333;
+        background: none;
+        border-radius: 10px 10px 0 0;
+    }
+
+}
+
+
+
+@media all and (max-width: 500px){
+    body{
+        background: #ffffff;
+        width: 420px;
+    }
+    
+    header{
+        max-width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.Myhead {
+        top: 0;
+        width: auto;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        z-index: 100; 
+        height: auto;
+    }
+    nav{
+        position: relative;
+        width: 410px;
+        display: flex;
+        padding: 0% 0.5%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651); 
+        background: linear-gradient(70deg,rgba(255, 192, 203), #03ffd5);
+        border-bottom: 4px solid rgba(227, 159, 159, 0.253);
+        
+    }
+    nav img{
+        width: 50px;
+        padding-top: 9px;
+        padding-left: 7px;
+        padding-right: 0%;
+        border-radius: 20px;
+    }
+   
+    .container form , article{
+        max-width: 410px;
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: .5px .5px 10px rgba(255, 0, 0, 0.146);
+        flex-wrap: wrap;
+        margin-top:10px;
+        background: rgb(255, 255, 255);
+    }
+    
+    .text-box hh1{
+        font-size: 10px;
+        margin: 0px;
+        color: rgb(116, 0, 0);
+        font-weight: bolder;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #welcome{
+        margin: 5px 0 5px;
+        font-size: 08px;
+        color: rgb(4, 12, 87);  
+        height: auto;
+        text-align: center;
+    }
+    .container, .text-box {
+        margin-top: 0.5px;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+    }
+    .text-box{
+        margin-top: 2px;
+    }
+    #inp.container{
+        margin-top: 0.5px;
+    }
+    
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #fbfdff;
+        background: #042940;
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0px 0 10px;
+        width: 374px;
+        height: 30px;
+        text-align: center;
+        font-weight: bolder;
+        align-self: center;
+        border-radius: 6px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .container form input , select, button{
+        width: 185px;
+        height: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        outline: none;
+        font-size: 10px;
+        margin-bottom: 4px;
+        background: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 0.5px #042940 solid;
+        border-radius: 0px 0px 6px 6px;
+        margin-right: 2px;
+        margin-left: 2px;
+        display: flex;
+    
+    }
+
+    input#projectName{
+        width: 374px;
+    }
+    input#roc, #SectionLength, #EntryAngle, #ExitAngle, #ProfileDepth, #DesignPressure, 
+    #LengthODrill, #WeightDrill, #WeightReamer{
+        width: 185px;
+        padding-right: 0px;
+    }
+    
+    
+    select{
+        width: 185px;
+        display: flex;
+        align-items: center;
+    }
+    div.PipeMaterial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    label {
+        margin: 0 2px;
+        background: #042940;
+        color: white;
+        width: 185px;
+        height: 15px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        padding: 0px 0px 0px 7px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 8px
+    }
+
+    div.in_out{
+        margin: 5px;
+    }
+    
+    label.text{
+        width: 185px;
+    }
+    label.text1{
+        width: 374px;
+    }
+    button#cal, .print {
+        background: #042940;
+        width: 170px;
+        text-decoration: none;
+        padding: 0;
+        box-shadow: 0px 1px 2px;
+        border: none;
+        border-radius: 30px;
+        transition: ease-in-out 0.3s;
+        margin-top: 10px;
+        height: 35px;
+    }
+
+    button#cal:hover,
+    button.print:hover{
+        background: rgb(255, 255, 255);
+        /* border: 1px solid #042940;
+        box-shadow: 0px 5px 15px #042940; */
+        border: 2px solid #333;
+    }
+
+    button.print{
+        align-self: center;
+    }
+    
+    button#cal .btn, .prn{
+        text-decoration: none;
+        color: rgb(255, 254, 254);
+        font-size: 14px;
+        padding: 10px 38px;
+        text-align: center;
+        font-family: 'Comfortaa', cursive;
+        flex: 1;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
+    }
+    button#cal .btn:hover,
+    a.prn:hover{
+        color: #042940;
+        font-size: 24px;
+        padding: 10px 25px;
+    }
+    
+    .container form #calculate {
+        border: none;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #333;
+        width: 100px;
+        padding: 0;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        transition: 0.3s;
+    }
+    
+    #result{
+        margin-top: 0.5px;
+    }
+    
+    form.result {
+        height: auto;
+        align-content: center;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 410px;
+        min-width: 400px;
+        padding: 5px;
+    }
+    
+    .container form h4{
+        font-size: larger;
+        color: rgb(65, 0, 0);
+        font-weight: 300;
+        margin-top: 20px;
+        margin-left: 50px;
+        height: 50px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    
+    }
+    #h4{
+        font-size: larger;
+        color: rgb(65, 0, 0);
+        font-weight: 300;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    
+    form p, span{
+        font-size: larger;
+        color: rgb(65, 0, 0);
+        font-weight: 300;
+        margin-top: 2px;
+        margin-left: 50px;
+        text-align: left;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    div.table1{
+        width: auto;
+        border-collapse: collapse;
+        margin: 10px;
+        width: 400px;
+        margin-left: 10px;
+    }
+    .headerDATA{
+        width: 8px;
+    }
+    thead{
+        text-align: start;
+    }
+    tbody {
+        width: auto;
+        color: rgb(0, 0, 0);
+        column-gap: 0px;
+        border-collapse: collapse;
+        font-size: 7px;
+        }
+    th {
+        column-gap: 0;
+        column-gap: 0px;
+        border-collapse: collapse;
+        font-size: 10px;
+    }
+    td{
+        border-collapse: collapse;
+        column-gap: 0px;
+    }
+    tr{
+        width: auto;
+        column-gap: 0px;
+        font-size: 10px;
+    }
+    
+    h2 {
+        font-family: 'Nunito Sans';
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    h2.L4{
+        margin-top: 0px;
+    }
+    
+    h3{
+        margin-left: 17px;
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 100;
+    }
+    
+    span{
+        margin-left: 0px;
+        color: rgb(255, 0, 0);
+        font-family: 'Nunito Sans';
+        font-size: 10px;
+    }
+    
+    select#ClientName{
+        margin: 0;
+        padding: 0;
+    }
+    div.CHead{
+        align-self:start;
+        margin-left: 10px;
+    }
+    div.CHead h2{
+        margin: 0;
+    }
+    div.client h1{
+        margin: 0px;
+        background: none;
+        color: #042940;
+        font-size: 10px;
+        height: auto;
+        display: flex;
+        justify-content: start;
+    }
+    span.head{
+        margin: 0;
+        background: none;
+        color: #042940;
+        font-size: 10px;
+    }
+    div.btnprint{
+        display: flex;
+        justify-content: center;
+        margin: 2px;
+    }
+    
+    .bootom{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-top: 0px;
+    }
+    .footer{
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 410px;
+        min-width: 410px;
+        background: #03ffd5;
+        border-radius: 6px;
+    }
+    
+        .myf{
+            text-align: center;
+            width: fit-content;
+            height: fit-content;
+            font-size: 14px;
+        }
+    a.mailid{
+        text-decoration: none;
+        color: #03ffd5;
+        font-weight: 100;
+    }
+    p.mail, .au{
+        display: flex;
+        align-items: center;
+        background: #333;
+        height: 20px;
+        width: 200px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 0px 0px 10px 10px;
+    }
+    p.au{
+        border: 2px solid #333;
+        background: none;
+        border-radius: 10px 10px 0 0;
+    }
+
+}

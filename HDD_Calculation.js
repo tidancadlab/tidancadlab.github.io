@@ -1,7 +1,9 @@
 
+
 function myFunction(){
     
         var client = document.getElementById("clientName").value;
+
         document.getElementById("client").innerHTML=client;
         var pmc = document.getElementById("pmc").value;
         document.getElementById("PMC").innerHTML=pmc;
@@ -27,7 +29,7 @@ function myFunction(){
         document.getElementsByName("PI")[4].innerHTML=Math.PI;
         var T = document.getElementById("pipeThick").value/1000; //Wall thickness
         document.getElementsByClassName("T")[0].innerHTML=T*1000;
-        document.getElementsByClassName("T")[1].innerHTML=T*1000;
+        document.getElementsByClassName("T")[1].innerHTML=T;
         var Di = Do-T-T;
         document.getElementsByClassName("Di")[0].innerHTML=Di;
         document.getElementsByClassName("Di")[1].innerHTML=Di;
@@ -137,7 +139,7 @@ function myFunction(){
         //4.4	Force due to Buoyancy:- (F1 in N)	
 	    //F1 =	   F x N
 	    //=	  f (Weight of Steel pipe in down hole x Proposed Length ) x N
-        var F1 = f * Wb * L * 9.806 ;
+        var F1 = f * -Wb * L * 9.806 ;
         document.getElementsByClassName("F1")[0].innerHTML=F1;
         document.getElementsByClassName("F1")[1].innerHTML=F1;
 
@@ -205,7 +207,7 @@ function myFunction(){
         if (pi<S_N){
             Pulling_PH = "SAFE"
         } else{
-            Pulling_PH = "not SAFE"
+            Pulling_PH = "NOT SAFE"
         }
         document.getElementsByClassName("pulling_PH")[0].innerHTML=Pulling_PH;
 
@@ -219,22 +221,14 @@ function myFunction(){
        var r = (E*Do)/(2*S); 
        document.getElementsByClassName("r")[0].innerHTML=r;
 
-       if (r<S){
+       if (r<R){
            CR = "Less"
        } else{
            CR = "Greater"
        }
        document.getElementsByClassName("CR")[0].innerHTML=CR;
         
-       
-
-
-
-       console.log();
-
-        
-
-
     }
-
+    
+    
   

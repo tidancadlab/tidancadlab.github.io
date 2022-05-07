@@ -1,28 +1,30 @@
 *{
     font-family: 'Times New Roman', Times, serif;
 }
-
-@media print {
-    div.Myhead,div.text-box,  div#inp * {
-        visibility: hidden;
-    }
-    .print * #result {
-        visibility: visible;
-    }
-    .print * #result{
-        position: relative;
-        left: 0px;
-        right: 0px;
-    }
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0px 0 15px;
+    width: 760px;
+    height: 40px;
+    text-align: center;
+    font-weight: bolder;
+    align-self: center;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 div.table1{
     margin: 30px;
     margin-bottom: 10px;
-    width: auto;
+    width: 800px;
     border-collapse: collapse;
 }
 .headerDATA{
-    width: 8px;
 }
 thead{
     text-align: start;
