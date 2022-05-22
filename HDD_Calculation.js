@@ -1,9 +1,9 @@
-
+function fun(e){
+    event.preventDefault()
+    }
 
 function myFunction(){
-    
         var client = document.getElementById("clientName").value;
-
         document.getElementById("client").innerHTML=client;
         var pmc = document.getElementById("pmc").value;
         document.getElementById("PMC").innerHTML=pmc;
@@ -227,8 +227,11 @@ function myFunction(){
            CR = "Greater"
        }
        document.getElementsByClassName("CR")[0].innerHTML=CR;
+       
+    
         
     }
     
+
     
   

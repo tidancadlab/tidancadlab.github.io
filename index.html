@@ -47,7 +47,7 @@
             </article>
         </div>
         <div class="container">
-            <form>
+            <form onsubmit="fun()">
                 <h1>Please Enter the DATA for HDD Profile Header</h1>
                 <div class="CName">
                     <label for="Client" class="text">Client Name</label>
@@ -75,7 +75,7 @@
             <form id="form">
                 <h1>Please Enter the Details of HDD Site and Section</h1>
                 <div class="PipeMaterial">
-                    <label for="pipeMaterial">* Pipe Material Grade</label>
+                    <label for="pipeMaterial" class="pmt">* Pipe Material Grade</label>
                     <select name="pipeMaterial" id="PipeMat">
                         <option value="42000">API 5L X-42"</option>
                         <option value="52000">API 5L X-52"</option>
@@ -152,9 +152,7 @@
                     <label for="Wdr">* Reamer Weight (Max Considered)</label>
                     <input type="number" name="Wdr" id="WeightReamer"  required>
                 </div>
-                <button name="btn" type="submit" value="viewport" onclick="myFunction()" id="cal">
-                    <a href="#form" class="btn">calculate</a>
-                </button>
+                <input type="button" value="Calculate" onclick="myFunction()" id="cal" required>
             </form>
         </div>
         
