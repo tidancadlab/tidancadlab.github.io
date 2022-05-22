@@ -1,107 +1,193 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:inherit;
+    font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
 }
-body{
 
-    background:#fbfdff;
-
+body {
+    background: url(../Images/back.jpg);
+    backdrop-filter: blur(20px);
+    height: 100vh;
 }
 
 div.Myhead {
-    position:sticky;
+    position: sticky;
+    margin: auto;
+    width: auto;
     top: 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    z-index: 100; 
-    height: auto;
+    z-index: 100;
+    border-bottom: 2px solid white;
+    background: rgba(255, 0, 0, 0.226);
+    backdrop-filter: blur(20px);
 }
-header{
-    width: 980px;
-    
-}
-nav{
-    position: relative;
-    max-height: 980px;
+
+
+nav {
     display: flex;
     padding: 0% 0.5%;
-    justify-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 0px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651); 
-    background: linear-gradient(70deg,rgba(255, 192, 203), #03ffd5);
-    backdrop-filter: blur(5px);
-    
+    background: none;
 }
-nav img{
-    width: 100px;
+
+nav img {
+    width: 75px;
     padding-top: 9px;
     padding-left: 7px;
     padding-right: 0%;
-    border-radius: 20px;
+}
+
+ul{
+    justify-content: center;
+    align-items: center;
+
+}
+li{
+    list-style: none;
+    display: flex;
+    padding: 8px 12px;
+}
+a{
+    display: flex;
+    padding: 2px 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin: 2px 20px 2px 5px;
+    transition: ease-in-out .3s;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    text-shadow: 2px 2px 10px rgb(253, 0, 0) ;
+}
+a:hover{
+    border: 1px solid rgb(251, 0, 0);
+}
+
+/* .background{
+    content: url(../Images/Background.jpg);
+    position: fixed;
+    width: 100%;
+    background-color: #ff6803;
+    top: 0;
+    z-index: -100;
+} */
+
+.blank{
+    margin: auto;
+}
+.text-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
 }
 
 
-.container form , article{
-    max-width: 980px;
-    min-width: 300px;
-    height: auto;
+.container form {
+    height: 800px;
+    width: 100%;
     padding: 20px;
-    display: flex;
     justify-content: center;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(255, 0, 0, 0.342);
-    backdrop-filter: blur(10px);
     flex-wrap: wrap;
-    margin-top:10px;
-    background: rgba(255, 255, 255, 0.652);
-    backdrop-filter: blur(10px);
-    backdrop-filter: blur(5px);
+    margin-top: 10px;
+}
+article {
+    position: relative;
+    background: url(../Images/back.jpg);
+    background-size: 100%;
+    background-color: #bd00003b;
+    width: 98%;
+    height: 70vh;
+    border-radius: 30px;
+    background-blend-mode: darken;
+    border: 2px solid white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.aboutUS{
+    position: absolute;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+    margin: auto;
+}
+hr.abr{
+    width: 350px;
+    margin-bottom: 10px;
 }
 
-.text-box hh1{
-    font-size: 25px;
-    color: rgb(116, 0, 0);
-    font-weight: bolder;
-    margin-top: 2px;
-    text-align: center;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-family: inherit;
-}
-#welcome{
-    margin: 13px 0 5px;
-    font-size: 18px;
-    font-weight: 400;
-    font-variant:small-caps;
-    color: rgb(4, 12, 87);  
-    font-weight: bold;    
+#welcome {
+    margin: 5px 0 2px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
     height: auto;
     text-align: center;
+    text-shadow: 1px 1px 10px black;
 }
-.container, .text-box {
+.divBtn{
+    margin-top: 20px;
+    display: flex;
+}
+.btn{
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: #03ffd5;
+    background-color: #042940;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+.aBtn{
+    color: #03ffd5;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 100%;
+}
+.container {
     margin-top: 0.5px;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
 }
-.text-box{
+
+.text-box {
     margin-top: 2px;
 }
-#inp.container{
+
+#inp.container {
     margin-top: 0.5px;
 }
 
-h1{
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,10 +203,17 @@ h1{
     font-weight: bolder;
     align-self: center;
     border-radius: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.container form input , select, button{
+.about {
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background: none;
+    margin: 0 0 10px;
+}
+.container form input,
+select,
+button {
     width: 460px;
     height: 30px;
     padding-left: 15px;
@@ -136,32 +229,43 @@ h1{
     margin-left: 5px;
 
 }
-.container input#roc:valid ~ label.pmt {
-    background: #03ffd5;
-}
 
-input#projectName{
+input#projectName {
     width: 930px;
 }
-input#roc, #SectionLength, #EntryAngle, #ExitAngle, #ProfileDepth, #DesignPressure, 
-#LengthODrill, #WeightDrill, #WeightReamer{
+
+input#roc,
+#SectionLength,
+#EntryAngle,
+#ExitAngle,
+#ProfileDepth,
+#DesignPressure,
+#LengthODrill,
+#WeightDrill,
+#WeightReamer {
     width: 225px;
     padding-right: 0px;
 }
 
+div.tpi {
+    display: flex;
+}
 
-select{
+select {
     width: 225px;
     display: flex;
     align-items: center;
 }
-div.PipeMaterial{
+
+div.PipeMaterial {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-label {
+
+label,
+select.IAT {
     margin: 0 5px;
     background: #042940;
     color: white;
@@ -176,15 +280,29 @@ label {
     font-size: 11.5px
 }
 
-label.text{
+select.IAT {
+    width: 460px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+table {
+    width: auto;
+    margin: auto;
+}
+
+label.text {
     width: 460px;
 }
-label.text1{
-    width: 930px;
+
+label.text1 {
+    width: auto;
+    margin: auto;
 }
-input#cal, button.print {
+
+button#cal,
+.print {
     background: #042940;
-    width: 50px;
+    width: 225px;
     text-decoration: none;
     padding: 0;
     box-shadow: 0px 1px 2px;
@@ -193,32 +311,31 @@ input#cal, button.print {
     transition: ease-in-out 0.3s;
     margin-top: 10px;
     height: 45px;
-    cursor: pointer;
 }
-input#cal:hover,
-button.print:hover{
+
+button#cal:hover,
+button.print:hover {
     background: rgb(255, 255, 255);
     /* border: 1px solid #042940;
     box-shadow: 0px 5px 15px #042940; */
     border: 2px solid #333;
 }
 
-input#cal, a.prn{
+button#cal .btn,
+a.prn {
     text-decoration: none;
-    height: 40px;
-    width: 80px;
     color: rgb(255, 254, 254);
     font-size: 20px;
     padding: 10px 43px;
     text-align: center;
     margin: 0px;
     font-family: 'Comfortaa', cursive;
-    cursor: pointer;
     flex: 1;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
 }
+
 button#cal .btn:hover,
-a.prn:hover{
+a.prn:hover {
     color: #042940;
     font-size: 24px;
     padding: 7px 25px;
@@ -239,7 +356,7 @@ a.prn:hover{
     transition: 0.3s;
 }
 
-#result{
+#result {
     margin-top: 0.5px;
 }
 
@@ -254,7 +371,7 @@ form.result {
     min-width: 500px;
 }
 
-.container form h4{
+.container form h4 {
     font-size: larger;
     color: rgb(65, 0, 0);
     font-weight: 300;
@@ -265,7 +382,8 @@ form.result {
     font-family: 'Times New Roman', Times, serif;
 
 }
-#h4{
+
+#h4 {
     font-size: larger;
     color: rgb(65, 0, 0);
     font-weight: 300;
@@ -273,7 +391,8 @@ form.result {
     text-transform: uppercase;
 }
 
-form p, span{
+form p,
+span {
     font-size: larger;
     color: rgb(65, 0, 0);
     font-weight: 300;
@@ -286,42 +405,48 @@ form p, span{
 
 
 
-input:placeholder-shown{
+input:placeholder-shown {
     border: 1px solid red;
 }
 
 
-div.table1{
-    margin: 30px;
+div.table1 {
+    margin: auto;
     margin-bottom: 10px;
     width: auto;
     border-collapse: collapse;
 }
-.headerDATA{
+
+.headerDATA {
     width: 8px;
 }
-thead{
+
+thead {
     text-align: start;
 }
+
 tbody {
     width: 80px;
     color: rgb(0, 0, 0);
     column-gap: 0px;
     border-collapse: collapse;
     font-size: 14px;
-    }
+}
+
 th {
     column-gap: 0;
     padding: 2px;
     column-gap: 0px;
     border-collapse: collapse;
 }
-td{
+
+td {
     border-collapse: collapse;
     padding: 2px;
     column-gap: 0px;
 }
-tr{
+
+tr {
     width: auto;
     column-gap: 0px;
 }
@@ -330,18 +455,20 @@ h2 {
     margin-left: 30px;
     font-family: 'Nunito Sans';
     font-size: 16px;
-    margin-top: 20px; 
+    margin-top: 20px;
     font-weight: 300;
 }
-h2.L4{
+
+h2.L4 {
     margin-top: 0px;
 }
-h2.L2{
+
+h2.L2 {
     font-weight: 600;
 }
 
 
-h3{
+h3 {
     margin-left: 37px;
     font-family: 'Nunito Sans';
     font-size: 14px;
@@ -349,25 +476,28 @@ h3{
     font-weight: 100;
 }
 
-span{
+span {
     margin-left: 0px;
     color: rgb(255, 0, 0);
     font-family: 'Nunito Sans';
     font-size: 14px;
 }
 
-select#ClientName{
+select#ClientName {
     margin: 0;
     padding: 0;
 }
-div.CHead{
-    align-self:start;
+
+div.CHead {
+    align-self: start;
     margin-left: 32px;
 }
-div.CHead h2{
+
+div.CHead h2 {
     margin: 0;
 }
-div.client h1{
+
+div.client h1 {
     margin: 0px;
     background: none;
     color: #042940;
@@ -376,48 +506,55 @@ div.client h1{
     display: flex;
     justify-content: start;
 }
-span.head{
+
+span.head {
     margin: 0;
     background: none;
     color: #042940;
     font-size: 16px;
 }
-div.btnprint{
+
+div.btnprint {
     display: flex;
     justify-content: center;
     margin: 2px;
 }
 
-.bootom{
+.bootom {
     align-items: center;
     display: flex;
     justify-content: center;
     align-self: center;
     margin-top: 10px;
+    bottom: 0;
 }
-.footer{
+
+.footer {
     display: flex;
-    height: 100px;
+    height: 155px;
     justify-content: center;
     align-items: center;
-    width: 980px;
+    width: 100%;
     min-width: 500px;
     background: #03ffd5;
     border-radius: 10px;
 }
 
-    .myf{
-        text-align: center;
-        width: fit-content;
-        height: fit-content;
-        font-size: 25px;
-    }
-a.mailid{
+.myf {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+}
+
+a.mailid {
     text-decoration: none;
     color: #03ffd5;
     font-weight: 100;
 }
-p.mail, .au{
+
+p.mail,
+.au {
     display: flex;
     align-items: center;
     background: #333;
@@ -427,22 +564,23 @@ p.mail, .au{
     justify-content: center;
     border-radius: 0px 0px 10px 10px;
 }
-p.au{
+
+p.au {
     border: 2px solid #333;
     background: none;
     border-radius: 10px 10px 0 0;
 }
 
-@media (max-width: 997px) and (min-width:500px){
-    body{
+@media (max-width: 997px) and (min-width:500px) {
+    body {
         background: #000000;
         width: 980px;
         justify-content: center;
         align-content: center;
         padding-left: 0px;
     }
-    
-    header{
+
+    header {
         max-width: auto;
         height: auto;
         display: flex;
@@ -455,10 +593,11 @@ p.au{
         justify-content: center;
         display: flex;
         align-items: center;
-        z-index: 100; 
+        z-index: 100;
         height: auto;
     }
-    nav{
+
+    nav {
         position: relative;
         width: 800px;
         display: flex;
@@ -467,20 +606,22 @@ p.au{
         align-items: center;
         margin-bottom: 0px;
         border-radius: 20px;
-        box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651); 
-        background: linear-gradient(70deg,rgba(255, 192, 203), #03ffd5);
+        box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651);
+        background: linear-gradient(70deg, rgba(255, 192, 203), #03ffd5);
         border-bottom: 4px solid rgba(227, 159, 159, 0.253);
-        
+
     }
-    nav img{
+
+    nav img {
         width: 70px;
         padding-top: 9px;
         padding-left: 7px;
         padding-right: 0%;
         border-radius: 20px;
     }
-   
-    .container form , article{
+
+    .container form,
+    article {
         width: 800px;
         height: auto;
         padding: 10px;
@@ -489,11 +630,11 @@ p.au{
         border-radius: 10px;
         box-shadow: 1.5px 1.5px 10px rgb(0, 0, 0);
         flex-wrap: wrap;
-        margin-top:10px;
+        margin-top: 10px;
         background: white;
     }
-    
-    .text-box hh1{
+
+    .text-box hh1 {
         font-size: 20px;
         color: rgb(116, 0, 0);
         font-weight: bolder;
@@ -501,28 +642,33 @@ p.au{
         text-transform: uppercase;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    #welcome{
+
+    #welcome {
         margin: 13px 0 5px;
         font-size: 14px;
-        color: rgb(4, 12, 87);  
+        color: rgb(4, 12, 87);
         height: auto;
         text-align: center;
     }
-    .container, .text-box {
+
+    .container,
+    .text-box {
         margin-top: 0.5px;
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
         display: flex;
         justify-content: center;
     }
-    .text-box{
+
+    .text-box {
         margin-top: 2px;
     }
-    #inp.container{
+
+    #inp.container {
         margin-top: 0.5px;
     }
-    
-    h1{
+
+    h1 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -540,8 +686,10 @@ p.au{
         border-radius: 8px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    
-    .container form input , select, button{
+
+    .container form input,
+    select,
+    button {
         width: 380px;
         height: 30px;
         padding-left: 5px;
@@ -556,30 +704,40 @@ p.au{
         margin-right: 2px;
         margin-left: 2px;
         display: flex;
-    
+
     }
 
-    input#projectName{
+    input#projectName {
         width: 760px;
     }
-    input#roc, #SectionLength, #EntryAngle, #ExitAngle, #ProfileDepth, #DesignPressure, 
-    #LengthODrill, #WeightDrill, #WeightReamer{
+
+    input#roc,
+    #SectionLength,
+    #EntryAngle,
+    #ExitAngle,
+    #ProfileDepth,
+    #DesignPressure,
+    #LengthODrill,
+    #WeightDrill,
+    #WeightReamer {
         width: 380px;
         padding-right: 0px;
     }
-    
-    
-    select{
+
+
+    select {
         width: 380px;
         display: flex;
         align-items: center;
     }
-    div.PipeMaterial{
+
+    div.PipeMaterial {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     label {
         margin: 0 2px;
         background: #042940;
@@ -595,17 +753,20 @@ p.au{
         font-size: 12px
     }
 
-    div.in_out{
+    div.in_out {
         margin: 5px;
     }
-    
-    label.text{
+
+    label.text {
         width: 380px;
     }
-    label.text1{
+
+    label.text1 {
         width: 760px;
     }
-    button#cal, .print {
+
+    button#cal,
+    .print {
         background: #a55504;
         width: 250px;
         text-decoration: none;
@@ -616,42 +777,40 @@ p.au{
         transition: ease-in-out 0.3s;
         margin-top: 10px;
         height: 45px;
-        cursor: pointer;
     }
 
     button#cal:hover,
-    button.print:hover{
+    button.print:hover {
         background: rgb(255, 255, 255);
         /* border: 1px solid #042940;
         box-shadow: 0px 5px 15px #042940; */
         border: 2px solid rgb(169, 80, 251);
     }
 
-    button.print{
+    button.print {
         align-self: center;
     }
-    
-    button#cal .btn, .prn{
+
+    button#cal .btn,
+    .prn {
         text-decoration: none;
-        height: 40px;
-        width: 200px;
         color: rgb(255, 254, 254);
         font-size: 19px;
         padding: 10px 38px;
         margin: 0px;
         text-align: center;
-        cursor: pointer;
         font-family: 'Comfortaa', cursive;
         flex: 1;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
     }
+
     button#cal .btn:hover,
-    a.prn:hover{
+    a.prn:hover {
         color: #042940;
         font-size: 24px;
         padding: 10px 25px;
     }
-    
+
     .container form #calculate {
         border: none;
         background: #fff;
@@ -666,11 +825,11 @@ p.au{
         margin-bottom: 30px;
         transition: 0.3s;
     }
-    
-    #result{
+
+    #result {
         margin-top: 0.5px;
     }
-    
+
     form.result {
         height: auto;
         align-content: center;
@@ -682,8 +841,8 @@ p.au{
         min-width: 600px;
         padding: 5px;
     }
-    
-    .container form h4{
+
+    .container form h4 {
         font-size: larger;
         color: rgb(65, 0, 0);
         font-weight: 300;
@@ -692,17 +851,19 @@ p.au{
         height: 50px;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-    
+
     }
-    #h4{
+
+    #h4 {
         font-size: larger;
         color: rgb(65, 0, 0);
         font-weight: 300;
         margin-top: 20px;
         text-transform: uppercase;
     }
-    
-    form p, span{
+
+    form p,
+    span {
         font-size: larger;
         color: rgb(65, 0, 0);
         font-weight: 300;
@@ -712,79 +873,89 @@ p.au{
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
     }
-    
-    div.table1{
+
+    div.table1 {
         width: auto;
         border-collapse: collapse;
         margin: 10px;
         width: 700px;
         margin-left: 10px;
     }
-    .headerDATA{
+
+    .headerDATA {
         width: 15px;
     }
-    thead{
+
+    thead {
         text-align: start;
     }
+
     tbody {
         width: auto;
         color: rgb(0, 0, 0);
         column-gap: 0px;
         border-collapse: collapse;
         font-size: 15px;
-        }
+    }
+
     th {
         column-gap: 0;
         column-gap: 0px;
         border-collapse: collapse;
         font-size: 13px;
     }
-    td{
+
+    td {
         border-collapse: collapse;
         column-gap: 0px;
     }
-    tr{
+
+    tr {
         width: auto;
         column-gap: 0px;
         font-size: 16px;
     }
-    
+
     h2 {
         font-family: 'Nunito Sans';
         font-size: 18px;
         margin-left: 10px;
     }
-    h2.L4{
+
+    h2.L4 {
         margin-top: 0px;
     }
-    
-    h3{
+
+    h3 {
         margin-left: 17px;
         font-family: 'Nunito Sans';
         font-size: 16px;
         color: rgb(0, 0, 0);
         font-weight: 100;
     }
-    
-    span{
+
+    span {
         margin-left: 0px;
         color: rgb(255, 0, 0);
         font-family: 'Nunito Sans';
         font-size: 16px;
     }
-    
-    select#ClientName{
+
+    select#ClientName {
         margin: 0;
         padding: 0;
     }
-    div.CHead{
-        align-self:start;
+
+    div.CHead {
+        align-self: start;
         margin-left: 10px;
     }
-    div.CHead h2{
+
+    div.CHead h2 {
         margin: 0;
     }
-    div.client h1{
+
+    div.client h1 {
         margin: 0px;
         background: none;
         color: #042940;
@@ -793,26 +964,29 @@ p.au{
         display: flex;
         justify-content: start;
     }
-    span.head{
+
+    span.head {
         margin: 0;
         background: none;
         color: #042940;
         font-size: 16px;
     }
-    div.btnprint{
+
+    div.btnprint {
         display: flex;
         justify-content: center;
         margin: 2px;
     }
-    
-    .bootom{
+
+    .bootom {
         align-items: center;
         display: flex;
         justify-content: center;
         align-self: center;
         margin-top: 0px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         height: 90px;
         justify-content: center;
@@ -822,19 +996,22 @@ p.au{
         background: #03ffd5;
         border-radius: 6px;
     }
-    
-        .myf{
-            text-align: center;
-            width: fit-content;
-            height: fit-content;
-            font-size: 18px;
-        }
-    a.mailid{
+
+    .myf {
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        font-size: 18px;
+    }
+
+    a.mailid {
         text-decoration: none;
         color: #03ffd5;
         font-weight: 100;
     }
-    p.mail, .au{
+
+    p.mail,
+    .au {
         display: flex;
         align-items: center;
         background: #333;
@@ -844,7 +1021,8 @@ p.au{
         justify-content: center;
         border-radius: 0px 0px 10px 10px;
     }
-    p.au{
+
+    p.au {
         border: 2px solid #333;
         background: none;
         border-radius: 10px 10px 0 0;
@@ -854,13 +1032,13 @@ p.au{
 
 
 
-@media all and (max-width: 500px){
-    body{
+@media all and (max-width: 500px) {
+    body {
         background: #ffffff;
         width: 420px;
     }
-    
-    header{
+
+    header {
         max-width: auto;
         height: auto;
         display: flex;
@@ -873,10 +1051,11 @@ p.au{
         justify-content: center;
         display: flex;
         align-items: center;
-        z-index: 100; 
+        z-index: 100;
         height: auto;
     }
-    nav{
+
+    nav {
         position: relative;
         width: 410px;
         display: flex;
@@ -885,20 +1064,22 @@ p.au{
         align-items: center;
         margin-bottom: 0px;
         border-radius: 20px;
-        box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651); 
-        background: linear-gradient(70deg,rgba(255, 192, 203), #03ffd5);
+        box-shadow: 2px 2px 10px rgba(248, 123, 123, 0.651);
+        background: linear-gradient(70deg, rgba(255, 192, 203), #03ffd5);
         border-bottom: 4px solid rgba(227, 159, 159, 0.253);
-        
+
     }
-    nav img{
+
+    nav img {
         width: 50px;
         padding-top: 9px;
         padding-left: 7px;
         padding-right: 0%;
         border-radius: 20px;
     }
-   
-    .container form , article{
+
+    .container form,
+    article {
         max-width: 410px;
         height: auto;
         padding: 10px;
@@ -907,11 +1088,11 @@ p.au{
         border-radius: 10px;
         box-shadow: .5px .5px 10px rgba(255, 0, 0, 0.146);
         flex-wrap: wrap;
-        margin-top:10px;
+        margin-top: 10px;
         background: rgb(255, 255, 255);
     }
-    
-    .text-box hh1{
+
+    .text-box hh1 {
         font-size: 10px;
         margin: 0px;
         color: rgb(116, 0, 0);
@@ -920,28 +1101,33 @@ p.au{
         text-transform: uppercase;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    #welcome{
+
+    #welcome {
         margin: 5px 0 5px;
         font-size: 08px;
-        color: rgb(4, 12, 87);  
+        color: rgb(4, 12, 87);
         height: auto;
         text-align: center;
     }
-    .container, .text-box {
+
+    .container,
+    .text-box {
         margin-top: 0.5px;
         align-items: center;
         font-family: 'Times New Roman', Times, serif;
         display: flex;
         justify-content: center;
     }
-    .text-box{
+
+    .text-box {
         margin-top: 2px;
     }
-    #inp.container{
+
+    #inp.container {
         margin-top: 0.5px;
     }
-    
-    h1{
+
+    h1 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -959,8 +1145,10 @@ p.au{
         border-radius: 6px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    
-    .container form input , select, button{
+
+    .container form input,
+    select,
+    button {
         width: 185px;
         height: 20px;
         padding-left: 5px;
@@ -975,30 +1163,40 @@ p.au{
         margin-right: 2px;
         margin-left: 2px;
         display: flex;
-    
+
     }
 
-    input#projectName{
+    input#projectName {
         width: 374px;
     }
-    input#roc, #SectionLength, #EntryAngle, #ExitAngle, #ProfileDepth, #DesignPressure, 
-    #LengthODrill, #WeightDrill, #WeightReamer{
+
+    input#roc,
+    #SectionLength,
+    #EntryAngle,
+    #ExitAngle,
+    #ProfileDepth,
+    #DesignPressure,
+    #LengthODrill,
+    #WeightDrill,
+    #WeightReamer {
         width: 185px;
         padding-right: 0px;
     }
-    
-    
-    select{
+
+
+    select {
         width: 185px;
         display: flex;
         align-items: center;
     }
-    div.PipeMaterial{
+
+    div.PipeMaterial {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     label {
         margin: 0 2px;
         background: #042940;
@@ -1014,17 +1212,20 @@ p.au{
         font-size: 8px
     }
 
-    div.in_out{
+    div.in_out {
         margin: 5px;
     }
-    
-    label.text{
+
+    label.text {
         width: 185px;
     }
-    label.text1{
+
+    label.text1 {
         width: 374px;
     }
-    button#cal, .print {
+
+    button#cal,
+    .print {
         background: #042940;
         width: 170px;
         text-decoration: none;
@@ -1038,18 +1239,19 @@ p.au{
     }
 
     button#cal:hover,
-    button.print:hover{
+    button.print:hover {
         background: rgb(255, 255, 255);
         /* border: 1px solid #042940;
         box-shadow: 0px 5px 15px #042940; */
         border: 2px solid #333;
     }
 
-    button.print{
+    button.print {
         align-self: center;
     }
-    
-    button#cal .btn, a.prn{
+
+    button#cal .btn,
+    a.prn {
         text-decoration: none;
         color: rgb(255, 254, 254);
         font-size: 14px;
@@ -1060,13 +1262,14 @@ p.au{
         flex: 1;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.25s;
     }
+
     button#cal .btn:hover,
-    a.prn:hover{
+    a.prn:hover {
         color: #042940;
         font-size: 20px;
         padding: 5px 15px;
     }
-    
+
     .container form #calculate {
         border: none;
         background: #fff;
@@ -1081,11 +1284,11 @@ p.au{
         margin-bottom: 30px;
         transition: 0.3s;
     }
-    
-    #result{
+
+    #result {
         margin-top: 0.5px;
     }
-    
+
     form.result {
         height: auto;
         align-content: center;
@@ -1097,8 +1300,8 @@ p.au{
         min-width: 400px;
         padding: 5px;
     }
-    
-    .container form h4{
+
+    .container form h4 {
         font-size: larger;
         color: rgb(65, 0, 0);
         font-weight: 300;
@@ -1107,17 +1310,19 @@ p.au{
         height: 50px;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
-    
+
     }
-    #h4{
+
+    #h4 {
         font-size: larger;
         color: rgb(65, 0, 0);
         font-weight: 300;
         margin-top: 20px;
         text-transform: uppercase;
     }
-    
-    form p, span{
+
+    form p,
+    span {
         font-size: larger;
         color: rgb(65, 0, 0);
         font-weight: 300;
@@ -1127,79 +1332,89 @@ p.au{
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
     }
-    
-    div.table1{
+
+    div.table1 {
         width: auto;
         border-collapse: collapse;
         margin: 10px;
         width: 400px;
         margin-left: 10px;
     }
-    .headerDATA{
+
+    .headerDATA {
         width: 8px;
     }
-    thead{
+
+    thead {
         text-align: start;
     }
+
     tbody {
         width: auto;
         color: rgb(0, 0, 0);
         column-gap: 0px;
         border-collapse: collapse;
         font-size: 7px;
-        }
+    }
+
     th {
         column-gap: 0;
         column-gap: 0px;
         border-collapse: collapse;
         font-size: 10px;
     }
-    td{
+
+    td {
         border-collapse: collapse;
         column-gap: 0px;
     }
-    tr{
+
+    tr {
         width: auto;
         column-gap: 0px;
         font-size: 10px;
     }
-    
+
     h2 {
         font-family: 'Nunito Sans';
         font-size: 9px;
         margin-left: 10px;
     }
-    h2.L4{
+
+    h2.L4 {
         margin-top: 0px;
     }
-    
-    h3{
+
+    h3 {
         margin-left: 17px;
         font-family: 'Nunito Sans';
         font-size: 10px;
         color: rgb(0, 0, 0);
         font-weight: 100;
     }
-    
-    span{
+
+    span {
         margin-left: 0px;
         color: rgb(255, 0, 0);
         font-family: 'Nunito Sans';
         font-size: 10px;
     }
-    
-    select#ClientName{
+
+    select#ClientName {
         margin: 0;
         padding: 0;
     }
-    div.CHead{
-        align-self:start;
+
+    div.CHead {
+        align-self: start;
         margin-left: 10px;
     }
-    div.CHead h2{
+
+    div.CHead h2 {
         margin: 0;
     }
-    div.client h1{
+
+    div.client h1 {
         margin: 0px;
         background: none;
         color: #042940;
@@ -1208,26 +1423,29 @@ p.au{
         display: flex;
         justify-content: start;
     }
-    span.head{
+
+    span.head {
         margin: 0;
         background: none;
         color: #042940;
         font-size: 10px;
     }
-    div.btnprint{
+
+    div.btnprint {
         display: flex;
         justify-content: center;
         margin: 2px;
     }
-    
-    .bootom{
+
+    .bootom {
         align-items: center;
         display: flex;
         justify-content: center;
         align-self: center;
         margin-top: 0px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         height: 50px;
         justify-content: center;
@@ -1237,19 +1455,22 @@ p.au{
         background: #03ffd5;
         border-radius: 6px;
     }
-    
-        .myf{
-            text-align: center;
-            width: fit-content;
-            height: fit-content;
-            font-size: 14px;
-        }
-    a.mailid{
+
+    .myf {
+        text-align: center;
+        width: fit-content;
+        height: fit-content;
+        font-size: 14px;
+    }
+
+    a.mailid {
         text-decoration: none;
         color: #03ffd5;
         font-weight: 100;
     }
-    p.mail, .au{
+
+    p.mail,
+    .au {
         display: flex;
         align-items: center;
         background: #333;
@@ -1259,7 +1480,8 @@ p.au{
         justify-content: center;
         border-radius: 0px 0px 10px 10px;
     }
-    p.au{
+
+    p.au {
         border: 2px solid #333;
         background: none;
         border-radius: 10px 10px 0 0;
