@@ -235,4 +235,6 @@ function myFunction(){
     
 }
 
-
+function printHdd(){
+    print();
+}
