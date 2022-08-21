@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d374481d3b.js" crossorigin="anonymous"></script>
+    <title>Nav Bar</title>
+</head>
+
+<body>
+    <nav class="Mynav">
+        <a class="websiteLogo" href="/V3.0/index.html"></a>
+        <ul id="nav_Ul" class="navUl">
+            <li class="noDevice">
+                <a href="/V3.0/index.html" style="background: #f25160;
+                color: #262729;" class="navlink"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="/V3.0/html/HDD_Cal.html" class="navlink"><i class="fa-solid fa-wrench"></i>Blog</a>
+                <a href="#" class="navlink"><i class="fa-solid fa-book"></i>About US</a>
+                <a href="#" class="navlink"><i class="fa-solid fa-address-card"></i>Contact US</a>
+            </li>
+        </ul>
+        <label id="navLabel" class="navBar">
+            <i class="bars fa-solid fa-bars" onclick="navBarOpen()" id="navOpen"></i>
+            <i class="bars fa-solid fa-xmark" onclick="navBarClose()" id="navClose"></i>
+        </label>
+
+    </nav>
+
+    <script>
+        const openBar = document.getElementById("navOpen");
+        const closeBar = document.getElementById("navClose");
+        const nav_Ul = document.getElementById("nav_Ul");
+
+        function navBarOpen() {
+            if (closeBar.style.display = "none") {
+                closeBar.style.display = "block"
+                openBar.style.display = "none"
+                nav_Ul.style.left = "0%"
+            }
+
+        }
+        function navBarClose() {
+            if (closeBar.style.display = "block") {
+                closeBar.style.display = "none"
+                openBar.style.display = "block"
+                nav_Ul.style.left = "-100%"
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
