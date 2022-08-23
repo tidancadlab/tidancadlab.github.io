@@ -31,7 +31,6 @@ nav {
     display: flex;
     padding: 0% 0.5%;
     margin: auto;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background: none;
@@ -200,7 +199,7 @@ h1 {
     width: 930px;
     height: 50px;
     text-align: center;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     align-self: center;
     border-radius: 10px;
 }
@@ -393,7 +392,7 @@ form.result {
 
 form p,
 span {
-    font-size: larger;
+    /* font-size: larger; */
     color: rgb(65, 0, 0);
     font-weight: 300;
     margin-top: 2px;
@@ -436,7 +435,7 @@ tbody {
 th {
     column-gap: 0;
     padding: 2px;
-    column-gap: 0px;
+    /* column-gap: 0px; */
     border-collapse: collapse;
 }
 
@@ -453,7 +452,7 @@ tr {
 
 h2 {
     margin-left: 30px;
-    font-family: 'Nunito Sans';
+    /* font-family: 'Nunito Sans'; */
     font-size: 16px;
     margin-top: 20px;
     font-weight: 300;
@@ -470,7 +469,7 @@ h2.L2 {
 
 h3 {
     margin-left: 37px;
-    font-family: 'Nunito Sans';
+    /* font-family: 'Nunito Sans'; */
     font-size: 14px;
     color: rgb(0, 0, 0);
     font-weight: 100;
@@ -681,7 +680,7 @@ p.au {
         width: 760px;
         height: 40px;
         text-align: center;
-        font-weight: bolder;
+        /* font-weight: bolder; */
         align-self: center;
         border-radius: 8px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
