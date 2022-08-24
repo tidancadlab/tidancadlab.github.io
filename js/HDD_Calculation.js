@@ -268,9 +268,9 @@ fc.onclick = (() => {
             document.getElementsByClassName("pi")[0].innerHTML = pi;
             document.getElementsByClassName("pi")[1].innerHTML = pi;
             if (pi < S_N) {
-               var Pulling_PH = "SAFE"
+                var Pulling_PH = "SAFE"
             } else {
-               var Pulling_PH = "NOT SAFE"
+                var Pulling_PH = "NOT SAFE"
             }
             document.getElementsByClassName("pulling_PH")[0].innerHTML = Pulling_PH;
 
@@ -285,9 +285,9 @@ fc.onclick = (() => {
             document.getElementsByClassName("r")[0].innerHTML = r;
 
             if (r < R) {
-                CR = "Less"
+                var CR = "Less"
             } else {
-                CR = "Greater"
+                var CR = "Greater"
             }
         }
     })
