@@ -134,9 +134,9 @@ fc.onclick = (() => {
             document.getElementsByClassName("dm")[1].innerHTML = dm;
             document.getElementById("dw1").innerHTML = dw;
             document.getElementById("ds").innerHTML = ds;
-            document.getElementsByClassName("L")[0].innerHTML = L;
-            document.getElementsByClassName("L")[1].innerHTML = L;
-            document.getElementsByClassName("L")[2].innerHTML = L;
+            document.getElementsByClassName("L")[0].innerHTML = L.value;
+            document.getElementsByClassName("L")[1].innerHTML = L.value;
+            document.getElementsByClassName("L")[2].innerHTML = L.value;
             document.getElementsByClassName("Q1")[0].innerHTML = Q1;
             document.getElementsByClassName("Q1")[1].innerHTML = Q1;
             document.getElementsByClassName("Q2")[0].innerHTML = Q2;
@@ -187,7 +187,7 @@ fc.onclick = (() => {
             if (Wb > 0) {
                 Wb = -Wb;
             } else {
-                Wb = Wb
+                this.Wb = Wb
             }
 
             document.getElementsByClassName("Wb")[0].innerHTML = Wb;
@@ -251,9 +251,9 @@ fc.onclick = (() => {
             document.getElementsByClassName("Ls")[0].innerHTML = Ls;
 
             if (Ls < S_N) {
-                Pulling = "SAFE"
+                var Pulling = "SAFE"
             } else {
-                Pulling = "Not SAFE"
+                var Pulling = "Not SAFE"
             }
             document.getElementsByClassName("pulling_PH")[0].innerHTML = Pulling;
 
@@ -268,9 +268,9 @@ fc.onclick = (() => {
             document.getElementsByClassName("pi")[0].innerHTML = pi;
             document.getElementsByClassName("pi")[1].innerHTML = pi;
             if (pi < S_N) {
-                Pulling_PH = "SAFE"
+               var Pulling_PH = "SAFE"
             } else {
-                Pulling_PH = "NOT SAFE"
+               var Pulling_PH = "NOT SAFE"
             }
             document.getElementsByClassName("pulling_PH")[0].innerHTML = Pulling_PH;
 
