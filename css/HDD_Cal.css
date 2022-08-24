@@ -53,7 +53,7 @@ nav {
     display: flex;
     padding: 0% 0.5%;
     margin: auto;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     background: none;
@@ -108,6 +108,7 @@ a {
 }
 #moreDiv{
     display: none;
+    margin-top: 0;
 }
 
 .navlink {
@@ -205,9 +206,6 @@ a.navlink::placeholder {
     height: 1px;
 }
 
-#moreDiv {
-    margin-top: 0;
-}
 
 p {
     color: var(--Light_Font_color);
@@ -407,7 +405,7 @@ table {
 th {
     font-family: 'Times New Roman', Times, serif;
     text-align: start;
-    font-weight: 300;
+    /* font-weight: 300; */
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
@@ -465,7 +463,7 @@ td {
     bottom: 0;
     height: auto;
     padding: 10px;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
     background: #121213bb;
     margin-top: 10px;
@@ -765,7 +763,8 @@ a#caltag:hover {
         top: 79px;
         left: -100%;
         background-color: rgba(12, 11, 11, 0.904);
-        transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s;
+        transition:cubic-bezier(1, -0.31, 0, 1.24) 0.6s;
+        ;
         font-size: 20px;
         backdrop-filter: blur(10px);
     }
@@ -782,11 +781,6 @@ a#caltag:hover {
 
     #navClose {
         display: none;
-        transition: ease-in-out 1s;
-    }
-
-    #navOpen {
-        transition: ease-in-out 1s;
     }
     .svg-css{
         margin: 0;
