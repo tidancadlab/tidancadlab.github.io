@@ -80,7 +80,7 @@ const resultDiv = document.getElementById("HddResult");
 
 fc.onclick = (() => {
 
-    WarningOnDataInput = [].map.call(inputs, function (input) {
+    const WarningOnDataInput = [].map.call(inputs, function (input) {
         const input1 = input.value;
         const labelId = 'label_' + input.id;
         if (input1 <= 0.000001 || input1 >= 620.00001 || input1 == '') {
